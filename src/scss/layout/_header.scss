@@ -6,7 +6,6 @@
     font-family: $font-secondary;
 
     .wrapper {
-        padding: 15px;
         height: 100%;
         display: flex;
         flex-direction: column;
@@ -39,8 +38,8 @@
 
     &--claim {
         font-family: $font-main;
-        padding: 20px;
-        letter-spacing: 2px;
+        padding: 20px 0;
+        letter-spacing: 1px;
 
     }
     &--button {
