@@ -1,14 +1,51 @@
 .page__header {
     background: url('../images/cover.jpg') no-repeat center;
     height: 100vh;
+    color: $color-light;
+    font-family: $font-secondary;
+    .wrapper {
+        padding: 15px;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        align-items: center;
+        position: relative;
+    }
     &--icon{
         position: fixed;
+        top: 0;
         height: 44px;
         width: 44px;
         background-color: $color-primary-medium;
-        text-align: center;
+        z-index: 1;
         .floating-menu {
             padding: 14px;
+        }
+    }
+
+    &--title {
+        text-align: center;
+        text-transform: uppercase;
+        font-size: 42px;
+        .title {
+            display: block;
+            padding: 5px
+        }
+    }
+
+    &--claim {
+        font-family: $font-main;
+        padding: 20px;
+    }
+    &--button {
+        height: 45px;
+        width: 45px;
+        text-align: center;
+        background-color: $color-light;
+        border-radius: 50%;
+        .arrow {
+            padding-top: 18px;
         }
     }
 
