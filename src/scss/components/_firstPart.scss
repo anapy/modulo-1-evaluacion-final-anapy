@@ -1,3 +1,29 @@
-.page__main--looking {
-
+.looking {
+    text-align: left;
+    &__subtitle {
+        color: $color-primary-light;
+        text-transform: capitalize;
+    }
+    &__title {
+        span {
+            text-transform: capitalize;
+            font-family: $font-secondary;
+            display: block;
+            font-size: rem(24);
+        }
+    }
+    &__button {
+        width: 76px;
+        height: 45px;
+        border: 2px solid $color-secondary;
+        border-radius: 30px;
+        text-align: center;
+        padding: 10px;
+        font-size: rem(20);
+        color: $font-secondary;
+        a {
+            text-transform: capitalize;
+            color:$color-secondary;
+        }
+    }
 }
