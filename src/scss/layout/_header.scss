@@ -1,2 +1,15 @@
 .page__header {
+    background: url('../images/cover.jpg') no-repeat center;
+    height: 100vh;
+    &--icon{
+        position: fixed;
+        height: 44px;
+        width: 44px;
+        background-color: $color-primary-medium;
+        text-align: center;
+        .floating-menu {
+            padding: 14px;
+        }
+    }
+
 }
