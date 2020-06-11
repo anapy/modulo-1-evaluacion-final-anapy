@@ -31,14 +31,17 @@
         text-transform: uppercase;
         font-size: 42px;
         .title {
+            letter-spacing: 3px;
             display: block;
-            padding: 5px
+            padding: 10px
         }
     }
 
     &--claim {
         font-family: $font-main;
         padding: 20px;
+        letter-spacing: 2px;
+
     }
     &--button {
         height: 45px;
