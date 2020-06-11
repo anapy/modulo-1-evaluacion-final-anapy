@@ -1,7 +1,11 @@
-@import 'core/variables';
 @import 'core/reset';
+@import 'core/functions'; 
+@import 'core/mixins';
+@import 'core/variables';
 @import 'layout/page';
 @import 'layout/header';
+@import 'components/firstPart.scss';
+@import 'components/secondPart.scss';
 @import 'layout/footer';
 @import 'pages/index';
 
@@ -15,7 +19,7 @@
 }
 
 html {
-  font-size: 16px;
+  font-size: $defaultSize;
 }
 
 h1 {
@@ -24,5 +28,6 @@ h1 {
 }
 
 .wrapper {
-  padding: 15px;
+  margin: 15px;
+  border: 2px solid red;
 }
