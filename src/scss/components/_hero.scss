@@ -40,6 +40,7 @@
         font-size: rem(16);
         @include tablet {
             font-size: rem(24);
+            
         }
         @include desktop {
             padding: 0;        
@@ -52,11 +53,17 @@
         text-align: center;
         background-color: $color-light;
         border-radius: 50%;
-        margin-top: 0px;
-        margin-bottom: 8px;
+        margin: 25px 0 38px;
         padding: 15px 0;
         a {
            padding: 10px;
+        }
+        @include tablet {
+            margin: 10px 0 0;
+        }
+        @include desktop {
+            position: relative;
+            transform: translate(0, 32px);
         }
     }
 
