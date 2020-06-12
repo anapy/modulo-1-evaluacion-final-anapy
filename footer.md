@@ -1,7 +1,0 @@
-        .copyright {
-
-        }
-
-        .claim {
-
-        }
