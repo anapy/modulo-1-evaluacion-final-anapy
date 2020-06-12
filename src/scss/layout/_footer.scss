@@ -8,6 +8,9 @@
         align-items: center;
         position: relative;
         text-align: center;
+        @include tablet {
+            flex-direction: row;
+        }
     }
     &--button {
         padding: 10px;
