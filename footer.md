@@ -1,22 +1,7 @@
-        &--button {
+        .copyright {
 
         }
 
-        &--submenu {
+        .claim {
 
-        }
-
-        &--socialMedia {
-
-        }
-
-        &--info {
-
-            .copyright {
-
-            }
-
-            .claim {
-
-            }
         }
