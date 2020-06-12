@@ -3,6 +3,7 @@
 @import 'core/mixins';
 @import 'core/variables';
 @import 'layout/page';
+@import 'components/hero.scss';
 @import 'layout/header';
 @import 'components/firstPart.scss';
 @import 'components/secondPart.scss';
@@ -17,15 +18,12 @@
   padding-inline-start: 0px;
   margin: 0;
   padding: 0;
-
 }
 
 html {
   font-size: $defaultSize;
   font-family: $font-main;
 }
-
-
 
 .wrapper {
   margin: 0 15px;
