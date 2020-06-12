@@ -6,33 +6,30 @@
     font-family: $font-secondary;
 
     .wrapper {
-        height: 100%;
+        margin: auto;
         display: flex;
         flex-direction: column;
         justify-content: flex-end;
         align-items: center;
-        position: relative;
+        height: 100vh;
+        display: flex;
     }
-    &--icon{
-        position: fixed;
-        top: 0;
-        height: 44px;
-        width: 44px;
-        background-color: $color-primary-medium;
-        z-index: 1;
-        .floating-menu {
-            padding: 14px;
-        }
-    }
-
     &--title {
+        line-height: 55px;
         text-align: center;
         text-transform: uppercase;
         font-size: rem(42);
         .title {
             letter-spacing: 3px;
             display: block;
-            padding: 10px
+        }
+        @include tablet {
+            line-height: 106px;
+            font-size: rem(80);
+        }
+        @include desktop {
+            line-height: 138px;
+            font-size: rem(100);
         }
     }
 
@@ -40,6 +37,13 @@
         font-family: $font-main;
         padding: 20px 0;
         letter-spacing: 1px;
+        font-size: rem(16);
+        @include tablet {
+            font-size: rem(24);
+        }
+        @include desktop {
+            padding: 0;        
+        }
 
     }
     &--button {
@@ -48,10 +52,11 @@
         text-align: center;
         background-color: $color-light;
         border-radius: 50%;
-        margin-top: 45px;
+        margin-top: 0px;
         margin-bottom: 8px;
-        .arrow {
-            padding-top: 18px;
+        padding: 15px 0;
+        a {
+           padding: 10px;
         }
     }
 
