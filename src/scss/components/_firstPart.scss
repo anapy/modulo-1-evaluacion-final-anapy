@@ -5,13 +5,17 @@
         text-transform: capitalize;
     }
     &__title {
-        span {
-            text-transform: capitalize;
-            font-family: $font-secondary;
-            display: block;
-            font-size: rem(24);
-        }
+        text-transform: capitalize;
+        font-family: $font-secondary;
+        display: block;
+        font-size: rem(24);
     }
+
+    &__text {
+        padding: 15px 0 30px;
+        font-size: rem(18);
+    }
+
     &__button {
         width: 76px;
         height: 45px;
