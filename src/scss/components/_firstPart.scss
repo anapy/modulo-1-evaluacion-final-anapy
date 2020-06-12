@@ -1,33 +1,46 @@
 .looking {
-    text-align: left;
-    &__subtitle {
-        color: $color-primary-light;
-        text-transform: capitalize;
+  text-align: left;
+  line-height: 30px;
+  padding-bottom: 45px;
+  &__subtitle {
+    color: $color-primary-light;
+    text-transform: capitalize;
+  }
+  &__title {
+    text-transform: capitalize;
+    font-family: $font-secondary;
+    font-size: rem(24);
+    padding-bottom: 15px;
+    &--one,
+    --two {
+      display: block;
+      @include tablet {
+        display: inline-block;
+      }
     }
-    &__title {
-        text-transform: capitalize;
-        font-family: $font-secondary;
-        display: block;
-        font-size: rem(24);
+    @include tablet {
+      line-height: 45px;
     }
+  }
 
-    &__text {
-        padding: 15px 0 30px;
-        font-size: rem(18);
-    }
+  &__text {
+    padding: 15px 0 30px;
+    font-size: rem(18);
+  }
 
-    &__button {
-        width: 76px;
-        height: 45px;
-        border: 2px solid $color-secondary;
-        border-radius: 30px;
-        text-align: center;
-        padding: 10px;
-        font-size: rem(20);
-        color: $font-secondary;
-        a {
-            text-transform: capitalize;
-            color:$color-secondary;
-        }
+  &__button {
+    width: 76px;
+    height: 45px;
+    border: 2px solid $color-secondary;
+    border-radius: 30px;
+    text-align: center;
+    padding: 6px;
+    font-size: rem(20);
+    color: $font-secondary;
+    a {
+      text-transform: capitalize;
+      color: $color-secondary;
+      padding: 18px;
     }
+  }
 }
