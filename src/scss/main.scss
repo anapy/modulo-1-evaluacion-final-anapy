@@ -3,6 +3,7 @@
 @import 'core/mixins';
 @import 'core/variables';
 @import 'layout/page';
+@import 'components/hero.scss';
 @import 'layout/header';
 @import 'components/firstPart.scss';
 @import 'components/secondPart.scss';
@@ -17,7 +18,11 @@
   padding-inline-start: 0px;
   margin: 0;
   padding: 0;
+}
 
+h1 {
+  margin: 0;
+  padding: 0;
 }
 
 html {
@@ -25,10 +30,16 @@ html {
   font-family: $font-main;
 }
 
-
-
 .wrapper {
-  margin: 0 15px;
-  padding: 15px 0px 45px;
+  min-width: 320px;
+  max-width: 1200px;
+  margin: auto;
+  padding: 15px 15px;
   border: 2px solid red;
+  @include tablet {
+    padding: 30px 40px 45px;
+  }
+  @include desktop {
+    padding: 60px 275px 60px;
+  }
 }

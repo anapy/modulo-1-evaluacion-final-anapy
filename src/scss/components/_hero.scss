@@ -1,0 +1,70 @@
+.page__hero {
+    background: url('../images/cover.jpg') center no-repeat;
+    background-size: cover;
+    height: 100vh;
+    color: $color-light;
+    font-family: $font-secondary;
+
+    .wrapper {
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        align-items: center;
+        height: 100vh;
+        display: flex;
+    }
+    &--title {
+        line-height: 55px;
+        text-align: center;
+        text-transform: uppercase;
+        font-size: rem(42);
+        .title {
+            letter-spacing: 3px;
+            display: block;
+        }
+        @include tablet {
+            line-height: 106px;
+            font-size: rem(80);
+        }
+        @include desktop {
+            line-height: 138px;
+            font-size: rem(100);
+        }
+    }
+
+    &--claim {
+        font-family: $font-main;
+        padding: 20px 0;
+        letter-spacing: 1px;
+        font-size: rem(16);
+        @include tablet {
+            font-size: rem(24);
+            
+        }
+        @include desktop {
+            padding: 0;        
+        }
+
+    }
+    &--button {
+        height: 45px;
+        width: 45px;
+        text-align: center;
+        background-color: $color-light;
+        border-radius: 50%;
+        margin: 25px 0 38px;
+        padding: 15px 0;
+        a {
+           padding: 10px;
+        }
+        @include tablet {
+            margin: 10px 0 0;
+        }
+        @include desktop {
+            position: relative;
+            transform: translate(0, 32px);
+        }
+    }
+
+}

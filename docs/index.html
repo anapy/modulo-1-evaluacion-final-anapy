@@ -16,22 +16,23 @@
               <a href="#" title="Ir a Adalab"><img class="floating-menu" src="./assets/images/ico-menu.svg" alt="Go to Adalab"
                       width="100%"></a>
           </div>
+      </header>
+      <div class="page__hero">
           <div class="wrapper">
-              <div class="page__header--title">
-                  <h1>
+              
+                  <h1 class="page__hero--title">
                       <span class="title">anonymous</span>
                       <span class="title">proxy</span>
                   </h1>
-              </div>
-              <div class="page__header--claim">
+              <div class="page__hero--claim">
                   <span>In hac habitasse platea dictumst.</span>
               </div>
-              <div class="page__header--button">
-                  <a href="#" title="Go to 3 Reasons To Purchase"><img class="arrow" src="./assets/images/ico-scroll-down.svg"></a>
+              <div class="page__hero--button">
+                  <a href="#" title="Go to 3 Reasons To Purchase"><img class="arrow"
+                          src="./assets/images/ico-scroll-down.svg"></a>
               </div>
           </div>
-
-      </header>
+      </div>
       <main class="page__main">
               <section class="looking">
                   <div class="wrapper">
@@ -39,8 +40,8 @@
                           <span class="looking__subtitle">insomnia tips</span>
                       </small>
                       <h2 class="looking__title">
-                          <span>looking throught a</span>
-                          <span>window</span>
+                          <span class="looking__title--one">looking throught a</span>
+                          <span class="looking__title--two">window</span>
                       </h2>
                       <p class="looking__text">
                           Donec accumsan, nulla ut volutpat porttitor, quam odio tempus felis, at luctus ex diam nec lectus.
@@ -54,37 +55,39 @@
               </section>
               <section class="page__main--reasons">
                   <div class="wrapper">
-                      <h2 class="title">3 reasons to purchase</h2>
-                      <div class="reasons">
-                          <div class=reason__one>
-                              <h3>Ut sed metus</h3>
-                              <p>Lorem ipsum dolor sit amet, consectetur.</p>
-                          </div>
-
-
-
-                          <div class=reason__two>
-                              <h3>Curabitur ac erat</h3>
-                              <p>Mauris mattis urna quis lorem molestie.</p>
-                          </div>
-
-
-
-                          <div class=reason__three>
-                              <h3>Morbi dictum</h3>
-                              <p>Aliquam in dolor et dolor tincidunt</p>
-                          </div>
-
-
-
+                      <h2 class="main__title">3 reasons to purchase</h2>
+                      <div class=reason__one>
+                          <h3 class="reason__title">Ut sed metus</h3>
+                          <p class="reason__text">Lorem ipsum dolor sit amet, consectetur.</p>
                       </div>
-                      <a href="#" class="button">More reasons</a>
+
+
+
+                      <div class=reason__two>
+                          <h3 class="reason__title">Curabitur ac erat</h3>
+                          <p class="reason__text">Mauris mattis urna quis lorem molestie.</p>
+                      </div>
+
+
+
+                      <div class=reason__three>
+                          <h3 class="reason__title">Morbi dictum</h3>
+                          <p class="reason__text">Aliquam in dolor et dolor tincidunt</p>
+                      </div>
+
+
+
+                      <div class="button__container">
+                          <a href="#" class="button">More reasons</a>
+                      </div>
                   </div>
               </section>  
       </main>
       <footer class="page__footer">
           <div class="wrapper">
-              <a href="#" class="page__footer--button">return</a>
+              <div class="page__footer--button">
+                  <a class="arrow" href="#" ><img src="./assets/images/ico-arrow.svg"></a>
+              </div>
               <nav class="page__footer--submenu">
                   <ul>
                       <li><a href="#" title="">articles</a></li>
@@ -101,8 +104,10 @@
                       <li><a href="#" title="">mastodon.social</a></li>
                   </ul>
               </nav>
-              <span>&copy;2017</span>
-              <span>we <i class="fa fa-heart"></i> components</span>
+              <div class="page__footer--info">
+                  <span class="copyright">&copy;2017</span>
+                  <span class="claim">we <i class="fa fa-heart"></i> components</span>
+              </div>
           </div>
       </footer>
     </div>
