@@ -54,5 +54,11 @@
     @include desktop {
       width: 160px;
     }
+    &:hover {
+      background-color: $color-primary-dark;
+      a {      
+        color: $color-light;
+      }
+    }
   }
 }
