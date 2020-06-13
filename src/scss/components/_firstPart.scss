@@ -37,7 +37,7 @@
     padding: 6px;
     font-size: rem(20);
     color: $font-secondary;
-    transition: background-color ease 1s, color ease 0.5s;
+    transition: background-color ease 0.5s, color ease 0.5s;
     a {
       text-transform: capitalize;
       color: $color-secondary;

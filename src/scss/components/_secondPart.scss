@@ -105,9 +105,9 @@
             }
         }
         &:hover {
-            background-color: $color-primary-light;              
+            background-color: $color-primary-super-light;
+            border: 1px solid $color-primary-dark;           
             & a {
-            font-size: rem(25);
             padding: 0;
             color: $color-primary-dark;
             }
