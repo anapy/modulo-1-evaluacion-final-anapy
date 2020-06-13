@@ -2,11 +2,9 @@
     background: url('../images/cover.jpg') center no-repeat;
     background-size: cover;
     height: 100vh;
-    color: $color-light;
     font-family: $font-secondary;
 
     .wrapper {
-        margin: auto;
         display: flex;
         flex-direction: column;
         justify-content: flex-end;
@@ -15,6 +13,7 @@
         display: flex;
     }
     &--title {
+        color: $color-light;
         line-height: 55px;
         text-align: center;
         text-transform: uppercase;
@@ -34,6 +33,7 @@
     }
 
     &--claim {
+        color: $color-light;
         font-family: $font-main;
         padding: 20px 0;
         letter-spacing: 1px;
