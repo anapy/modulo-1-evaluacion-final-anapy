@@ -1,5 +1,6 @@
 .looking {
   text-align: left;
+
   &__subtitle {
     color: $color-primary-light;
     text-transform: capitalize;
@@ -28,6 +29,7 @@
     border-radius: 30px;
     text-align: center;
     padding: 6px;
+    margin-bottom: 15px;
     font-size: rem(20);
     color: $color-secondary;
     transition: background-color ease 0.5s, color ease 0.5s;
@@ -43,6 +45,7 @@
     }
     @include tablet {
       width: 91px;
+      margin-bottom: 0;
     }
     @include desktop {
       width: 160px;
