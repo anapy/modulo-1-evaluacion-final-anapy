@@ -1,70 +1,66 @@
 .page__main--reasons {
     background-color: $color-primary-super-light;
     .wrapper {
-        padding: 0;
         text-align: center;
         display: grid;
         grid-template-columns: 1fr 184px 1fr;
-        grid-template-rows: 30px 75px 1fr 1fr 1fr 45px 60px;
-        grid-gap: 0;
+        grid-template-rows: 35px 1fr 1fr 1fr 60px;
+        grid-row-gap: 45px;
+        justify-content: start;
         align-items: center;
         @include tablet {
-            grid-template-columns: 1fr 213px 213px 213px 1fr;
-            grid-template-rows: repeat(3, 1fr);
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: 90px 105px 105px;
+            grid-column-gap: 27px;
         }
         @include desktop {
-            grid-template-columns: 1fr 354px 354px 354px 1fr;
+            padding: 60px 80px;
+            grid-template-columns: 354px 354px 354px;
+            grid-template-rows: 90px 112px 105px;
+
         }
     }
     .main__title {
         margin: 0;
         text-align: center;
         text-transform: capitalize;
-        padding-bottom: 45px;
-        grid-row-start: 2;
+        grid-row-start: 1;
         grid-column: span 3;
         @include tablet {
-            grid-column: span 5;
+            grid-column: span 3;
         }
     }
     .reason__one, .reason__two, .reason__three { 
         grid-column-start: 2;
-        padding-bottom: 45px;
+        grid-row-start: auto;
         @include tablet {
-            margin: 0 10px;
-            grid-row-start: 2;         
+            grid-row-start: 2;
         }
     }
 
     .reason__one {
-        grid-row-start: 3;
         @include tablet {
-            grid-row-start: 2;         
-
+            grid-column: auto;
         }
     }
     .reason__two {
-        grid-row-start: 4;
         @include tablet {
-            grid-column-start: 3;         
+            grid-column: auto;
         }
     }
     .reason__three {
-        grid-row-start: 5;
         @include tablet {
-            grid-column-start: 4;         
+            grid-column: auto;
         }
     }
-
     .reason__title {
-        @include tablet {
-            padding: 0;
+        @include desktop {
+            padding-bottom: 14px;
         }
     }
-    
     .reason__text {
         @include desktop {
-            padding: 0 30px;
+            padding: 0 15px;
         }
     }
 
@@ -75,7 +71,7 @@
         height: 45px;
         width: 184px;
         grid-column-start: 2;
-        grid-row-start: 6;
+        grid-row-start: 5;
         text-align: center;
         background-color: $color-secondary;
         border-radius: 20px;
@@ -85,8 +81,10 @@
         }
 
         @include tablet {
-            margin: 60px 0 60px;
-            grid-column-start: 3;
+            justify-self: center;
+            margin-top: 60px;
+            grid-column-start: 2;
+            grid-row-start: auto;
             width: 210px;
             & a {
             padding: 15px 33px;
@@ -94,7 +92,6 @@
         }
         @include desktop{
             justify-self: center;
-            grid-column-start: 3;
             width: 255px;
             & a {
             padding: 15px 56px;
