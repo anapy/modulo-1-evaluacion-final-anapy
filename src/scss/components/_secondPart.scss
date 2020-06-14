@@ -26,9 +26,6 @@
         @include tablet {
             grid-column: span 5;
         }
-        @include tablet {
-            font-size: rem(45);
-        }
     }
 
     .reason__one {
@@ -54,19 +51,12 @@
     }
 
     .reason__title {
-        font-size: rem(18);
         @include tablet {
             padding: 0;
-            font-size: rem(24);
         }
     }
     
     .reason__text {
-        font-size: rem(18);
-        @include tablet {
-            line-height: 30px;
-            font-size: rem(20);
-        }
         @include desktop {
             padding: 0 30px;
         }

@@ -1,6 +1,5 @@
 .looking {
   text-align: left;
-  line-height: 30px;
   padding-bottom: 45px;
   &__subtitle {
     color: $color-primary-light;
@@ -9,7 +8,6 @@
   &__title {
     text-transform: capitalize;
     font-family: $font-secondary;
-    font-size: rem(24);
     padding-bottom: 15px;
     &--one,
     --two {
@@ -18,14 +16,10 @@
         display: inline-block;
       }
     }
-    @include tablet {
-      line-height: 45px;
-    }
   }
 
   &__text {
     padding: 15px 0 30px;
-    font-size: rem(18);
   }
 
   &__button {

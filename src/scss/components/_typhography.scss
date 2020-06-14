@@ -1,18 +1,52 @@
-.txt-lg {
-    font-size: rem(42);
-    line-height: 55px;
+.txt-xs {
+    font-size: rem(14);
+    line-height: 30px;
+}
+
+.txt-xs-title{
+    font-size: rem(14);
+    line-height: 30px;
     @include tablet {
-        line-height: 106px;
-        font-size: rem(80);
-    }
-    @include desktop {
-        line-height: 138px;
-        font-size: rem(100);
+        line-height: 30px;
+        font-size: rem(16);
     }
 }
 
+.txt-sm {
+    font-size: rem(16);
+    line-height: 30px;
+}
 
+.txt-md-title {
+    font-size: rem(18);
+    line-height: 30px;
+    @include tablet {
+        line-height: 30px;
+        font-size: rem(24);
+    }
+}
 
+.txt-md {
+    font-size: rem(18);
+    line-height: 30px;
+    @include tablet {
+        line-height: 30px;
+        font-size: rem(20);
+    }
+}
+
+.txt-lg {
+    font-size: rem(24);
+    line-height: 30px;
+    @include tablet {
+        line-height: 45px;
+        font-size: rem(26);
+    }
+    @include desktop {
+        line-height: 45px;
+        font-size: rem(32);
+    }
+}
 
 .txt-xl {
     font-size: rem(42);
