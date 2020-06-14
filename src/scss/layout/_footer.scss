@@ -20,9 +20,10 @@
         }
     }
     &--button {
+        position: absolute;
         text-align: center;
         border-radius: 50%;
-        transform: translate(0, -55px);
+        transform: translate(0, -25px);
         top: 0;
         height: 45px;
         width: 45px;
@@ -34,40 +35,33 @@
         }
         @keyframes moving {
             from {
-                position: relative;
-                transform: translate(0, 0px) rotateY(180deg);
+                transform: translate(0, -25px) rotateY(180deg);
             }
             to {
-                position: relative;
                 transform: translate(0, -200px);
             }
         }
         @include tablet {
             order: 2;
-            position: absolute;
             transform: translate(44vw, -25px);
             @keyframes moving {
                 from {
-                    position: absolute;
                     transform: translate(44vw, -25px) rotateY(180deg);
                 }
                 to {
-                    position: absolute;
                     transform: translate(44vw, -200px);
                     
                 }
             }
         }
         @include desktop {
-            transform: translate(225px, -25px);
+            transform: translate(275px, -25px);
             @keyframes moving {
                 from {
-                    position: absolute;
-                    transform: translate(225px, 0px) rotateY(180deg);
+                    transform: translate(275px, -25px) rotateY(180deg);
                 }
                 to {
-                    position: absolute;
-                    transform: translate(225px, -200px);
+                    transform: translate(275px, -200px);
                     
                 }
             }
@@ -76,9 +70,9 @@
     
     &--submenu {
         text-transform: uppercase;
-        padding: 15px;
+        margin: 0;
         a{
-            padding: 10px;
+            padding: 5px;
           }
         @include tablet {
            padding: 0px;
