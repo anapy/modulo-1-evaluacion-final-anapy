@@ -14,77 +14,69 @@
         @include desktop {
             padding: 60px 80px;
             grid-template-columns: 354px 354px 354px;
-            grid-template-rows: 90px 112px 60px;
+            grid-template-rows: 45px 112px 60px;
         }
-    }
-    .main__title {
-        text-align: center;
-        text-transform: capitalize;
-        grid-column: span 3;
-    }
-    .reason__one, .reason__two, .reason__three { 
-        grid-column-start: 2;
-        grid-row-start: auto;
-        @include tablet {
-            grid-row-start: 2;
-            grid-column: auto;
+        .main__title {
+            text-transform: capitalize;
+            grid-column: span 3;
         }
-        .reason__title {
-            @include desktop {
-                padding-bottom: 14px;
-            }
-        }
-        .reason__text {
-            @include desktop {
-                padding: 0 25px;
-            }
-        }
-    }
-
-    .button__container {
-        padding: 10px;
-        color: $color-light;
-        font-size: rem(20);
-        height: 45px;
-        width: 184px;
-        grid-column-start: 2;
-        grid-row-start: 5;
-        text-align: center;
-        background-color: $color-secondary;
-        border-radius: 20px;
-        transition: background-color 0.5s;
-        & a {
-            padding: 12px 20px;
-        }
-
-        @include tablet {
-            justify-self: center;
-            margin: 15px 0;
+        .reason__one, .reason__two, .reason__three { 
             grid-column-start: 2;
             grid-row-start: auto;
-            width: 210px;
-            & a {
-            padding: 15px 33px;
+            @include tablet {
+                grid-row-start: 2;
+                grid-column: auto;
+            }
+            .reason__title {
+                @include tablet {
+                    padding-bottom: 14px;
+                }
+            }
+            .reason__text {
+                @include desktop {
+                    padding: 0 25px;
+                }
             }
         }
-        @include desktop{
-            justify-self: center;
-            width: 255px;
+        .button__container {
+            color: $color-light;
+            font-size: rem(20);
+            height: 45px;
+            width: 184px;
+            grid-column-start: 2;
+            background-color: $color-secondary;
+            border-radius: 20px;
+            transition: background-color 0.5s;
             & a {
-            padding: 15px 56px;
+                display: block;
+                padding: 10px 20px;
+            }
+            @include tablet {
+                justify-self: center;
+                margin: 15px 0;
+                grid-column-start: 2;
+                grid-row-start: auto;
+                width: 210px;
+                & a {
+                    padding: 10px 33px;
+                }
+            }
+            @include desktop{
+                justify-self: center;
+                width: 255px;
+                & a {
+                padding: 10px 56px;
+                }
+            }
+            &:hover {
+                background-color: $color-primary-super-light;
+                border: 1px solid $color-primary-dark;           
+                & a {
+                color: $color-primary-dark;
+                }
             }
         }
-        &:hover {
-            background-color: $color-primary-super-light;
-            border: 1px solid $color-primary-dark;           
-            & a {
-            padding: 0;
-            color: $color-primary-dark;
-            }
-        }
-    }
-    
-
+    }  
 }
 
 
