@@ -1,0 +1,28 @@
+.txt-lg {
+    font-size: rem(42);
+    line-height: 55px;
+    @include tablet {
+        line-height: 106px;
+        font-size: rem(80);
+    }
+    @include desktop {
+        line-height: 138px;
+        font-size: rem(100);
+    }
+}
+
+
+
+
+.txt-xl {
+    font-size: rem(42);
+    line-height: 55px;
+    @include tablet {
+        line-height: 106px;
+        font-size: rem(80);
+    }
+    @include desktop {
+        line-height: 138px;
+        font-size: rem(100);
+    }
+}
