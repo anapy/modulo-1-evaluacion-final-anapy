@@ -72,13 +72,11 @@
                 }
             }
         }
-
-
     }
+    
     &--submenu {
         text-transform: uppercase;
         padding: 15px;
-        line-height: 30px;
         a{
             padding: 10px;
           }
@@ -91,7 +89,6 @@
     &--socialMedia {
         text-transform: uppercase;
         padding: 15px;
-        line-height: 30px;
         a{
             padding: 5px;
           }
@@ -107,16 +104,10 @@
     &--info {
         padding: 15px;
         span {
-            font-size: rem(14);
             display: block;
-            padding: 10px;
             .fa-heart{
                 color: $color-secondary;
             }
-            @include tablet {            
-            padding: 5px;
-            
-        }
         }
         @include tablet {
             order: -1;
@@ -124,5 +115,4 @@
             margin-right: 30px;
         }
     }
-
 }

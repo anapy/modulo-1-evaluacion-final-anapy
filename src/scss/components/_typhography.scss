@@ -1,3 +1,9 @@
+/*FONT FAMILY*/
+.font-title {
+    font-family: $font-secondary;
+}
+
+/*FONT SIZES*/
 .txt-xs {
     font-size: rem(14);
     line-height: 30px;
@@ -6,7 +12,7 @@
 .txt-xs-title{
     font-size: rem(14);
     line-height: 30px;
-    @include tablet {
+    @include desktop {
         line-height: 30px;
         font-size: rem(16);
     }

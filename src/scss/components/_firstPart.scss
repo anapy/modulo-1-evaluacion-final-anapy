@@ -7,7 +7,6 @@
   }
   &__title {
     text-transform: capitalize;
-    font-family: $font-secondary;
     padding-bottom: 15px;
     &--one,
     --two {
@@ -20,6 +19,7 @@
 
   &__text {
     padding: 15px 0 30px;
+    color: $color-medium-dark;
   }
 
   &__button {
@@ -30,11 +30,10 @@
     text-align: center;
     padding: 6px;
     font-size: rem(20);
-    color: $font-secondary;
+    color: $color-secondary;
     transition: background-color ease 0.5s, color ease 0.5s;
     a {
       text-transform: capitalize;
-      color: $color-secondary;
       padding: 18px;
       @include tablet {
         padding: 11px 25px;
