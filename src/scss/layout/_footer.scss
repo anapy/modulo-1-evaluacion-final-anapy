@@ -8,6 +8,7 @@
         align-items: center;
         position: relative;
         text-align: center;
+        padding: 60px 15px 45px;
         @include tablet {
             flex-direction: row;
             justify-content: space-between;
@@ -16,7 +17,7 @@
             padding: 45px 40px 45px;
         }
         @include desktop {
-            padding: 45px 346px 45px;
+            padding: 45px 370px 45px;
         }
     }
     &--button {
@@ -55,13 +56,13 @@
             }
         }
         @include desktop {
-            transform: translate(275px, -25px);
+            transform: translate(245px, -25px);
             @keyframes moving {
                 from {
-                    transform: translate(275px, -25px) rotateY(180deg);
+                    transform: translate(245px, -25px) rotateY(180deg);
                 }
                 to {
-                    transform: translate(275px, -200px);
+                    transform: translate(245px, -200px);
                     
                 }
             }
@@ -71,6 +72,7 @@
     &--submenu {
         text-transform: uppercase;
         margin: 0;
+        padding-bottom: 15px;
         a{
             padding: 5px;
           }
