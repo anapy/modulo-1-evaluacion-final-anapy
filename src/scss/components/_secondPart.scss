@@ -40,32 +40,19 @@
         }
         .button__container {
             color: $color-light;
-            font-size: rem(20);
-            height: 45px;
             width: 184px;
-            grid-column-start: 2;
             background-color: $color-secondary;
-            border-radius: 20px;
+            grid-column-start: 2;
             transition: background-color 0.5s;
-            & a {
-                display: block;
-                padding: 10px 20px;
-            }
             @include tablet {
                 justify-self: center;
                 margin: 15px 0;
                 grid-column-start: 2;
                 grid-row-start: auto;
                 width: 210px;
-                & a {
-                    padding: 10px 33px;
-                }
             }
             @include desktop{
                 width: 255px;
-                & a {
-                padding: 10px 56px;
-                }
             }
             &:hover {
                 background-color: $color-primary-super-light;
