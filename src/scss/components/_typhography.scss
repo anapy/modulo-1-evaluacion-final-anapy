@@ -23,6 +23,15 @@
     line-height: 30px;
 }
 
+.txt-sm-title {
+    font-size: rem(16);
+    line-height: 21px;
+    @include tablet {
+        line-height: 32px;
+        font-size: rem(24);
+    }
+}
+
 .txt-md-title {
     font-size: rem(18);
     line-height: 30px;

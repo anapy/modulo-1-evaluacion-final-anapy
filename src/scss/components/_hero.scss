@@ -20,18 +20,9 @@
 
     &--claim {
         padding: 10px 0 45px;
-        line-height: 21px;
-        & p {
-            font-size: rem(16);
-            color: $color-light;
-            font-family: $font-main;
-        }
+        color: $color-light;
         @include tablet {                
             padding: 20px 0 30px;   
-            & p {
-                line-height: 32px;
-                font-size: rem(24);  
-            }   
         }
         @include desktop {
             padding: 0;        
