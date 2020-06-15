@@ -36,6 +36,7 @@
         }
         @keyframes moving {
             from {
+                background-color: $color-primary-dark;
                 transform: translate(0, -25px) rotateY(180deg);
             }
             to {
@@ -47,6 +48,7 @@
             transform: translate(44vw, -25px);
             @keyframes moving {
                 from {
+                    background-color: $color-primary-dark;
                     transform: translate(44vw, -25px) rotateY(180deg);
                 }
                 to {
@@ -59,6 +61,7 @@
             transform: translate(245px, -25px);
             @keyframes moving {
                 from {
+                    background-color: $color-primary-dark;
                     transform: translate(245px, -25px) rotateY(180deg);
                 }
                 to {
