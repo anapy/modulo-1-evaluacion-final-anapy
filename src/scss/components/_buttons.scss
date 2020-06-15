@@ -12,4 +12,7 @@
     height: 45px;
     width: 45px;
     background-color: $color-light;
+    & a {
+        display: block;
+    }
 }

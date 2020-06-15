@@ -29,7 +29,6 @@
     margin-bottom: 15px;
     transition: background-color ease 0.5s, color ease 0.5s;
     a {
-      display: block;
       text-transform: capitalize;
     }
     @include tablet {
