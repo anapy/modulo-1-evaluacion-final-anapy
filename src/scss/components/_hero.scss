@@ -32,12 +32,10 @@
     &--button {
         height: 45px;
         width: 45px;
-        background-color: $color-light;
-        border-radius: 50%;
         margin: 0 0 8px;
-        a {
+        & a {
             display: block;
-            padding: 14px 12px;
+            line-height: 45px;         
         }
         @include tablet {
             margin: 10px 0 0;

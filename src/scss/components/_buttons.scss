@@ -6,3 +6,10 @@
         display: block;
     }
 }
+
+.circular-button {
+    border-radius: 50%;          
+    height: 45px;
+    width: 45px;
+    background-color: $color-light;
+}
