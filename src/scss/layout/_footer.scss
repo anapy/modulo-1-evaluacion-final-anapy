@@ -22,11 +22,11 @@
     }
     &--button {
         position: absolute;
-        transform: translate(0, -25px);
+        transform: translate(0, -20px);
         top: 0;
         box-shadow: 0 2px 4px 0 $color-primary-dark;
         & a {
-            padding: 8px 12px;
+            padding: 10px 12px;
         }
         &:hover {
             animation: 2s moving 0.2s 1; 
@@ -34,7 +34,7 @@
         @keyframes moving {
             from {
                 background-color: $color-primary-dark;
-                transform: translate(0, -25px) rotateY(180deg);
+                transform: translate(0, -20px) rotateY(180deg);
             }
             to {
                 transform: translate(0, -200px);
@@ -46,7 +46,7 @@
             @keyframes moving {
                 from {
                     background-color: $color-primary-dark;
-                    transform: translate(44vw, -25px) rotateY(180deg);
+                    transform: translate(44vw, -20px) rotateY(180deg);
                 }
                 to {
                     transform: translate(44vw, -200px);
@@ -59,7 +59,7 @@
             @keyframes moving {
                 from {
                     background-color: $color-primary-dark;
-                    transform: translate(245px, -25px) rotateY(180deg);
+                    transform: translate(245px, -20px) rotateY(180deg);
                 }
                 to {
                     transform: translate(245px, -200px); 
