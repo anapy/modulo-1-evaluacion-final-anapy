@@ -44,9 +44,9 @@
         background-color: $color-light;
         border-radius: 50%;
         margin: 0 0 8px;
-        padding: 15px 0;
         a {
-           padding: 10px;
+            display: block;
+            padding: 14px 12px;
         }
         @include tablet {
             margin: 10px 0 0;
@@ -55,6 +55,25 @@
             position: relative;
             margin:0;
             transform: translate(0, 47px);
+        }
+        &:hover a {
+            animation: 2s movingdown 0.2s 1; 
+        }
+        @keyframes movingdown{
+            from {
+                border-radius: 50%;
+                border: 1px solid $color-secondary;
+                position: relative;
+                transform: rotateY(180deg);
+            }
+            to {
+                border-radius: 50%;
+                background-color: $color-primary-dark;
+                border: 1 px solid $color-secondary;
+                box-shadow: 0 2px 4px 0 $color-primary-dark;
+                position: relative;
+                transform: translate(0, 200px);
+            }
         }
     }
 
